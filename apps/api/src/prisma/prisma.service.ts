@@ -29,7 +29,7 @@ export class PrismaService
 
     const pool = new pg.Pool({
       connectionString,
-      ssl: process.env.NODE_ENV === 'production' ? true : false,
+      ssl: { rejectUnauthorized: false },
     });
     const adapter = new PrismaPg(pool);
     super({ adapter });
