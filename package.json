@@ -1,0 +1,19 @@
+{
+  "name": "tote-bag",
+  "packageManager": "bun@1.3.6",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "start": "turbo start",
+    "install:all": "bun install",
+    "api": "bruno open api-docs"
+  },
+  "devDependencies": {
+    "turbo": "^2.8.1"
+  }
+}
